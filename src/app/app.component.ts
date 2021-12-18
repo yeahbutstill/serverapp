@@ -26,7 +26,6 @@ export class AppComponent implements OnInit {
   private isLoading = new BehaviorSubject<boolean>(false);
   isLoading$ = this.isLoading.asObservable();
 
-
   constructor(private serverService: ServerService, private notifier: NotificationService) { }
 
   ngOnInit(): void {

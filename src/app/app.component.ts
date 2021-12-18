@@ -1,4 +1,3 @@
-
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { BehaviorSubject, Observable, of } from 'rxjs';
@@ -18,7 +17,7 @@ import { ServerService } from './service/server.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit {
-  appState$: Observablee<AppState<CustomResponse>>;
+  appState$: Observable<AppState<CustomResponse>>;
   readonly DataState = DataState;
   readonly Status = Status;
   private filterSubject = new BehaviorSubject<string>('');

@@ -1,3 +1,9 @@
+import { Injectable } from "@angular/core";
+import { Observable, tap, catchError, throwError } from "rxjs";
+import { Status } from "../enum/status.enum";
+import { CustomResponse } from "../interface/custom-response";
+import { Server } from "../interface/server";
+
 @Injectable({ providedIn: 'root' })
 export class ServerService {
   private readonly apiUrl = 'http://localhost:8080';

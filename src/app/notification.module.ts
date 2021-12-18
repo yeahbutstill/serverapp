@@ -1,3 +1,6 @@
+import { NgModule } from "@angular/core";
+import { NotifierOptions, NotifierModule } from "angular-notifier";
+
 const customNotifierOptions: NotifierOptions = {
   position: {
       horizontal: {
